@@ -4,8 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category",
-    "description": ""
+    "displayName": "Category"
   },
   "options": {
     "draftAndPublish": true
@@ -13,28 +12,13 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
-    },
-    "icon": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "type": "string"
     },
     "slug": {
       "type": "uid"
     },
-    "foods": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::food.food",
-      "mappedBy": "category"
+    "description": {
+      "type": "text"
     }
   }
 }
